@@ -43,8 +43,6 @@ void saveScore(void);
 void createFile(void);
 void updateTopScore(void);
 
-
-
 //util functions
 SDL_Surface* loadSurface(string path);
 SDL_Texture* loadTexture(string path);
@@ -60,7 +58,7 @@ const char* GAMENAME = "2048 - The Game";
 const bool DEBUG = false;
 const int SIZE = 3;
 
-int STARTY = SCREEN_HEIGHT / 5 * 2, x = 0, y = 0;
+int STARTY = SCREEN_HEIGHT / 5 * 2;
 int smallest = SCREEN_WIDTH < SCREEN_HEIGHT - STARTY ? SCREEN_WIDTH : SCREEN_HEIGHT - STARTY;
 int INBETWEEN = smallest/SIZE/8;
 int BLOCKSIZE = (smallest - (SIZE+1)*INBETWEEN) / SIZE;
