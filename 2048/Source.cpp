@@ -43,6 +43,8 @@ void saveScore(void);
 void createFile(void);
 void updateTopScore(void);
 
+
+
 //util functions
 SDL_Surface* loadSurface(string path);
 SDL_Texture* loadTexture(string path);
